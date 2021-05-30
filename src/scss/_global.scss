@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 
 *,
@@ -64,8 +65,13 @@ body {
     color: var(--text-color);
     transition: background-color .3s ease-out;
     overflow-x: hidden;
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         width: 8px;
+        background: var(--main-gradient);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--main-color);
+        border-radius: var(--border-radius);
     }
 }
 
