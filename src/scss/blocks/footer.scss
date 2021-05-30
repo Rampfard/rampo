@@ -1,0 +1,8 @@
+.footer {
+    padding: 20px 0;
+    background: var(--main-gradient);
+    &__copy {
+        color: rgba(#fff, .5);
+        text-align: center;
+    }
+}

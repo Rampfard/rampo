@@ -1,0 +1,28 @@
+@import "config";
+@import "libs";
+@import "global";
+
+// Components
+
+@import "components/buttons";
+@import "components/forms";
+@import "components/theme-menu";
+
+
+// Blocks
+
+@import "blocks/header";
+@import "blocks/home";
+@import "blocks/about";
+@import "blocks/works";
+@import "blocks/features";
+@import "blocks/blog";
+@import "blocks/people";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/modal";
+
+// Media queries
+
+@import "media";

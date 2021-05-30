@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    z-index: -5;
+    transition: all .3s ease-out;
+    &__dialog {
+        animation: slideOut .3s ease-out;
+        position: relative;
+        width: 450px;
+        padding: 25px 15px 20px;
+        background: var(--main-gradient);
+        border-radius: var(--border-radius);
+    }
+
+    &__message {
+        color: var(--text-color-light);
+        width: 350px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--text-color-light);
+    }
+
+    &__close-btn {
+        position: absolute;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        font-size: 28px;
+        color: var(--text-color-light);
+        cursor: pointer;
+    }
+
+    .contacts-form {
+        padding: 20px;
+    }
+
+    .contacts-form__element {
+        margin-bottom: 30px;
+    }
+
+    .contacts-form__btn {
+        text-align: center;
+        padding: 10px 25px;
+    }
+}
+
+.modal--active {
+    z-index: 500;
+    opacity: 1;
+    .modal__dialog {
+        animation: slideIn .3s ease-out;
+    }
+}

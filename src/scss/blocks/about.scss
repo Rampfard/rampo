@@ -1,0 +1,112 @@
+
+.about {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 95px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container {
+        margin: 0;
+    }
+
+    &__content {
+        max-width: 500px;
+        margin-top: 45px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__subtitle {
+        margin-bottom: 55px;
+        position: relative;
+    }
+    
+    &__media {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    &__play-btn {
+        top: 50%;
+        left: -10%;
+        transform: translateY(-50%);
+        &:hover {
+            transform: scale(1.1) translateY(-48%);
+        }
+    }
+}
+
+.about-accordion {
+    max-width: 470px;
+    &__item {
+        margin-bottom: 24px;
+        &-title {
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: inline-block;
+            overflow: hidden;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 8px;
+                top: 15px;
+                left: -100%;
+                background-color: var(--main-color);
+                z-index: -1;
+                transition: all .3s;
+            }
+        }
+
+        &-arrow {
+            display: inline-block;
+            width: 10px;
+            height: 6px;
+            margin: 0 6px;
+            transition: all .2s;
+            fill: var(--text-color)
+        }
+
+        &-text {
+            transition: opacity .4s ease-out;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            color: var(--text-color);
+        }
+    }
+    
+    .about-accordion__item--active {
+        .about-accordion__item-arrow {
+            transform: rotate(180deg);
+        }
+
+        .about-accordion__item-title {
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 8px;
+                top: 15px;
+                left: 0;
+                background-color:  var(--main-color);
+                z-index: -1;
+            }
+        }
+        
+        .about-accordion__item-text {
+            opacity: .5;
+            visibility: visible;
+            height: auto;
+        }                      
+    }
+}
+

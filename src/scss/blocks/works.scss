@@ -1,0 +1,141 @@
+.works {
+    position: relative;
+    padding: 60px 0 50px; 
+    background: var(--main-color-transparent);
+    overflow: hidden;
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 55px;
+    }
+
+    &__subtitle {
+        max-width: 430px;
+        margin-right: 20px;
+    }
+
+    &__text {
+        max-width: 570px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        max-width: 520px;
+        margin-bottom: 42px;
+    }
+
+    &__tab {
+        color: var(--text-color);
+        font-weight: 400;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all .2s ease-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__tab--active{
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 370px);
+        justify-content: center;
+        grid-auto-rows: 272px;
+        gap: 30px;
+        margin-bottom: 48px;
+    }
+
+    &__content {
+        text-align: center;
+    }
+}
+
+.works-item {
+    position: relative;
+    max-height: 270px;
+    text-align: left;
+    display: none;
+    &__img {
+        border-radius: var(--border-radius);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: relative;
+        top: 100%;
+        transition: .6s;
+        width: 100%;
+        color: rgba(#fff, .5);
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 9px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }
+
+    &__info {
+        position: relative;
+        transform: translateY(200%);
+        transition: transform .3s ease-out;
+    }
+
+    &__overlay {
+        display: flex;
+        align-items: flex-end;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        background-color: rgba(#000, .4);
+        transition: opacity .3s ease-out;
+    }
+
+    &:hover {
+        .works-item__overlay {
+            opacity: 1;
+        }
+
+        .works-item__info {
+            transform: translateY(0);
+        }
+    }
+}
+
+.works-item--active {
+    display: block;
+    animation: fadeInDown .6s ease-out;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

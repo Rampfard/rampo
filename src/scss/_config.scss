@@ -1,0 +1,41 @@
+// Fonts
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+    }
+}
+
+@include font('Poppins', normal, 700, '../fonts/Poppins-Bold.woff2');
+@include font('Source Sans Pro', normal, 400, '../fonts/SourceSansPro-Regular.woff2');
+@include font('Source Sans Pro', normal, 600, '../fonts/SourceSansPro-SemiBold.woff2');
+
+// Additional CSS styles
+
+@import 'node_modules/swiper/swiper-bundle';
+@import 'node_modules/aos/dist/aos';
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(15%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15%);
+    }
+}

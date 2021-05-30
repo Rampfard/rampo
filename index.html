@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Rampo</title>
+    <meta name="description" content="May the Force be with you">
+
+    <meta property="og:title" content="The Force is here">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="rampfard.github.io/rampo">
+    <meta property="og:image" content="">
+
+    <link type="image/png" sizes="16x16" rel="icon" href="/favicon.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="/favicon.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="/favicon.png">
+    <link type="image/png" sizes="120x120" rel="icon" href="/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#" data-aos="fade-right" data-aos-duration="900">
+                    <img class="logo-icon" src="img/icons/logo-icon.svg" alt="logo">
+                    <span>Rampo</span>
+                </a>
+                <nav class="menu" data-aos="fade-down" data-aos-duration="900">
+                    <button class="menu-btn btn">
+                        <span class="menu-btn__line menu-btn__line-left"></span>
+                        <span class="menu-btn__line"></span>
+                        <span class="menu-btn__line menu-btn__line-right"></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#works">Works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#features">Features</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#people">People</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn header__btn" data-aos="fade-left" data-aos-duration="900">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="home">
+            <div class="container home__container">
+                <div class="home-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="home-slide home-slide--1 swiper-slide">
+                            <div class="home-slide__info" data-aos="fade-right" data-aos-duration="900"
+                                data-aos-delay="150" data-swiper-parallax="-40%">
+                                <h1 class="home-slide__title">
+                                    Omnis Voluptas
+                                </h1>
+                                <div class="home-slide__text">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et
+                                    voluptates repudiandae sint et molestiae non recusandae.
+                                </div>
+                                <button class="btn home-slide__btn">Explore</button>
+                            </div>
+                            <div class="home-slide__img" data-aos="fade-in" data-aos-duration="900">
+                                <img src="img/home-slide-1.png" data-theme-img alt="slide">
+                            </div>
+                            <div class="bubbles">
+                                <span class="bubble-small"></span>
+                                <span class="bubble-big"></span>
+                            </div>
+                        </div>
+                        <div class="home-slide home-slide--2 swiper-slide">
+                            <div class="home-slide__info home-slider__info-2" data-swiper-parallax="-40%">
+                                <h1 class="home-slide__title-2 title">
+                                    quasi architecto
+                                </h1>
+                                <div class="home-slide__subtitle subtitle">
+                                    Beatae vitae
+                                    dicta sunt
+                                </div>
+                                <button class="btn home-slide__btn">Read more</button>
+                            </div>
+                            <div class="home-slide__img home-slide__img-2">
+                                <img src="img/home-slide-2.png" data-theme-img alt="slide">
+                            </div>
+                            <div class="bubbles">
+                                <span class="bubble-small"></span>
+                                <span class="bubble-mid"></span>
+                                <span class="bubble-big"></span>
+                            </div>
+                        </div>
+                        <div class="home-slide home-slide--3 swiper-slide">
+                            <div class="home-slide__info" data-swiper-parallax="-40%">
+                                <h1 class="home-slide__title">
+                                    Voluptatibus
+                                    maiores
+                                </h1>
+                                <div class="home-slide__text">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                </div>
+                                <button class="btn home-slide__btn">Explore</button>
+                            </div>
+                            <div class="home-slide__img">
+                                <img src="img/home-slide-3.png" data-theme-img alt="slide">
+                            </div>
+                            <div class="bubbles">
+                                <span class="bubble-mid"></span>
+                                <span class="bubble-small"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="home-slider__btn-prev slider-btn btn">
+                    <img src="img/icons/slider-arrow.svg" alt="">
+                </button>
+                <button class="home-slider__btn-next slider-btn btn">
+                    <img src="img/icons/slider-arrow.svg" alt="">
+                </button>
+            </div>
+            <ul class="home-social social">
+                <li class="social__item" data-aos="fade-up" data-aos-duration="950" data-aos-offset="40">
+                    <a class="social__link" href="#">
+                        <img src="img/icons/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item" data-aos="fade-up" data-aos-duration="950" data-aos-delay="150"
+                    data-aos-offset="40">
+                    <a class="social__link" href="#">
+                        <img src="img/icons/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item" data-aos="fade-up" data-aos-duration="950" data-aos-delay="250"
+                    data-aos-offset="40">
+                    <a class="social__link" href="#">
+                        <img src="img/icons/instagram.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__wrapper">
+                <div class="container about__container">
+                    <div class="about__content">
+                        <h2 class="title about__title" data-aos="fade-right" data-aos-duration="950">
+                            Quis autem
+                        </h2>
+                        <h3 class="subtitle about__subtitle" data-aos="fade-right" data-aos-duration="950"
+                            data-aos-delay="150">
+                            Corporis suscipit laboriosam
+                        </h3>
+                        <div class="about-accordion" data-aos="fade-in" data-aos-duration="950">
+                            <div class="about-accordion__item about-accordion__item--active">
+                                <div class="about-accordion__item-title">
+                                    Totam rem aperiam
+                                    <svg class="about-accordion__item-arrow" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 4.868L1.17875 6L5.00167 2.2644L8.82125 6L10 4.868L5.00167 0L0 4.868Z" />
+                                    </svg>
+                                </div>
+                                <div class="about-accordion__item-text">
+                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus
+                                    id
+                                    quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                    repellendus.
+                                </div>
+                            </div>
+                            <div class="about-accordion__item">
+                                <div class="about-accordion__item-title">
+                                    Eaque ipsa quae
+                                    <svg class="about-accordion__item-arrow" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 4.868L1.17875 6L5.00167 2.2644L8.82125 6L10 4.868L5.00167 0L0 4.868Z" />
+                                    </svg>
+                                </div>
+                                <div class="about-accordion__item-text">
+                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus
+                                    id
+                                    quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                    repellendus.
+                                </div>
+                            </div>
+                            <div class="about-accordion__item">
+                                <div class="about-accordion__item-title">
+                                    Inventore veritatis
+                                    <svg class="about-accordion__item-arrow" width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 4.868L1.17875 6L5.00167 2.2644L8.82125 6L10 4.868L5.00167 0L0 4.868Z" />
+                                    </svg>
+                                </div>
+                                <div class="about-accordion__item-text">
+                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus
+                                    id
+                                    quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                    repellendus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__media ">
+                    <div class="about__img frame-img" data-aos="fade-left" data-aos-duration="950">
+                        <img src="img/about_img.webp" alt="art">
+                    </div>
+                    <a class="play-btn about__play-btn" href="#">
+                        <svg viewBox="0 0 25 27" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 13.5L0 27V0L25 13.5Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="container">
+                <h2 class="title works__title" data-aos="fade-right" data-aos-duration="950">
+                    Nisi ut aliquid
+                </h2>
+                <div class="works__info">
+                    <h3 class="subtitle works__subtitle" data-aos="fade-right" data-aos-duration="950"
+                        data-aos-delay="150">
+                        Ullam corporis
+                        suscipit
+                    </h3>
+                    <div class="works__text" data-aos="fade-in" data-aos-duration="950">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                        ipsum
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                        incidunt ut
+                        labore et dolore magnam aliquam quaerat voluptatem.
+                    </div>
+                </div>
+                <div class="works__content">
+                    <ul class="works__tabs">
+                        <li class="works__tab works__tab--active" data-tab-type="works-all" data-aos="fade-right"
+                            data-aos-duration="950">
+                            Quis Autem
+                        </li>
+                        <li class="works__tab" data-tab-type="works-recent" data-aos="fade-right"
+                            data-aos-duration="950" data-aos-delay="50">
+                            Reprehenderit
+                        </li>
+                        <li class="works__tab" data-tab-type="works-old" data-aos="fade-right" data-aos-duration="950"
+                            data-aos-delay="100">
+                            Voluptate
+                        </li>
+                        <li class="works__tab" data-aos="fade-right" data-aos-duration="950" data-aos-delay="150">
+                            Molestiae
+                        </li>
+                        <li class="works__tab" data-aos="fade-right" data-aos-duration="950" data-aos-delay="200">
+                            Consequatur
+                        </li>
+                    </ul>
+                    <div class="works__items">
+                        <div class="works-item works-all works-recent" data-aos="fade-down" data-aos-duration="950">
+                            <a href="#">
+                                <img class="works-item__img" src="img/works-item-1.webp" alt="">
+                                <div class="works-item__overlay">
+                                    <div class="works-item__info">
+                                        <div class="works-item__title">
+                                            Exercitation
+                                        </div>
+                                        <div class="works-item__text">
+                                            Ullamco laboris
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="works-item works-all works-recent" data-aos="fade-down" data-aos-duration="950"
+                            data-aos-delay="150">
+                            <a href="#">
+                                <img class="works-item__img" src="img/works-item-2.webp" alt="">
+                                <div class="works-item__overlay">
+                                    <div class="works-item__info">
+                                        <div class="works-item__title">
+                                            Exercitation
+                                        </div>
+                                        <div class="works-item__text">
+                                            Ullamco laboris
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="works-item works-all works-old" data-aos="fade-down" data-aos-duration="950"
+                            data-aos-delay="200">
+                            <a href="#">
+                                <img class="works-item__img" src="img/works-item-3.webp" alt="">
+                                <div class="works-item__overlay">
+                                    <div class="works-item__info">
+                                        <div class="works-item__title">
+                                            Exercitation
+                                        </div>
+                                        <div class="works-item__text">
+                                            Ullamco laboris
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div data-aos="fade-down" data-aos-duration="950">
+                    <button class="works-btn btn" data-aos="zoom-in" data-aos-duration="6feature-icon5 0">All
+                        works</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="features__title subtitle">
+                    Fugiat quo
+                </h2>
+                <div class="features__text">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam
+                    rem aperiam.
+                </div>
+                <div class="features__items">
+                    <div class="features-item" data-aos="fade-right" data-aos-duration="950">
+                        <img class="features-item__img" src="img/icons/circle-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Consequuntur
+                        </div>
+                        <div class="features-item__descr">
+                            Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                        </div>
+                    </div>
+                    <div class="features-item" data-aos="fade-right" data-aos-duration="950" data-aos-delay="50">
+                        <img class="features-item__img" src="img/icons/papper-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Voluptatem
+                        </div>
+                        <div class="features-item__descr">
+                            Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        </div>
+                    </div>
+                    <div class="features-item" data-aos="fade-right" data-aos-duration="950" data-aos-delay="100">
+                        <img class="features-item__img" src="img/icons/stonks-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Quisquam
+                        </div>
+                        <div class="features-item__descr">
+                            Quis nostrum exercitationem ullam corporis suscipit laboriosam
+                        </div>
+                    </div>
+                    <div class="features-item" data-aos="fade-left" data-aos-duration="950" data-aos-delay="100">
+                        <img class="features-item__img" src="img/icons/clock-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Aliquid
+                        </div>
+                        <div class="features-item__descr">
+                            Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil
+                        </div>
+                    </div>
+                    <div class="features-item" data-aos="fade-left" data-aos-duration="950" data-aos-delay="50">
+                        <img class="features-item__img" src="img/icons/atom-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Excepteur
+                        </div>
+                        <div class="features-item__descr">
+                            Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim
+                        </div>
+                    </div>
+                    <div class="features-item" data-aos="fade-left" data-aos-duration="950">
+                        <img class="features-item__img" src="img/icons/note-icon.svg" data-theme-icon
+                            alt="feature-icon">
+                        <div class="features-item__title">
+                            Accusamus
+                        </div>
+                        <div class="features-item__descr">
+                            Odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <div class="blog__content">
+                        <h2 class="title blog__title" data-aos="fade-right" data-aos-duration="950">
+                            Nisi ut aliquid
+                        </h2>
+                        <h3 class="subtitle blog__subtitle" data-aos="fade-right" data-aos-duration="950"
+                            data-aos-delay="150">
+                            Omnis voluptas
+                            assumenda
+                        </h3>
+                        <div class="blog__text" data-aos="fade-in" data-aos-duration="950">
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est.
+                        </div>
+                        <button class="blog__btn btn" data-aos="fade-in" data-aos-duration="650">Read more</button>
+                    </div>
+                    <div class="blog-media" data-aos="fade-left" data-aos-duration="950">
+                        <div class="blog__img frame-img">
+                            <img src="img/night.webp" alt="art">
+                        </div>
+                        <div class="blog-media__info">
+                            <div class="blog-media__title">
+                                Itaque earum rerum
+                            </div>
+                            <div class="blog-media__text">
+                                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                eveniet ut
+                                et voluptates
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="people" class="people">
+            <div class="container">
+                <h2 class="people__title title" data-aos="fade-right" data-aos-duration="950">
+                    fugiat quo
+                </h2>
+                <h3 class="people__subtitle subtitle" data-aos="fade-right" data-aos-duration="950"
+                    data-aos-delay="150">
+                    Nulla pariatur
+                </h3>
+                <div class="people__cards">
+                    <div class="people-card" data-aos="fade-up" data-aos-duration="950">
+                        <div class="people-card__img">
+                            <img src="img/people_avatar-1.webp" alt="">
+                        </div>
+                        <div class="people-card__social">
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="people-card__descr">
+                            <div class="people-card__name">
+                                Dia Teala
+                            </div>
+                            <div class="people-card__role">
+                                Accusamus
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people-card" data-aos="fade-up" data-aos-duration="950" data-aos-delay="100">
+                        <div class="people-card__img">
+                            <img src="img/people_avatar-2.webp" alt="">
+                        </div>
+                        <div class="people-card__social">
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="people-card__descr">
+                            <div class="people-card__name">
+                                Ren Delan
+                            </div>
+                            <div class="people-card__role">
+                                Dignissimos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people-card" data-aos="fade-up" data-aos-duration="950" data-aos-delay="150">
+                        <div class="people-card__img">
+                            <img src="img/people_avatar-3.webp" alt="">
+                        </div>
+                        <div class="people-card__social">
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="people-card__descr">
+                            <div class="people-card__name">
+                                Mia Maito
+                            </div>
+                            <div class="people-card__role">
+                                Ducimus
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people-card" data-aos="fade-up" data-aos-duration="950" data-aos-delay="200">
+                        <div class="people-card__img">
+                            <img src="img/people_avatar-4.webp" alt="">
+                        </div>
+                        <div class="people-card__social">
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                            <a class="people-card__social-link" href="#">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="people-card__descr">
+                            <div class="people-card__name">
+                                Blanditiis Balins
+                            </div>
+                            <div class="people-card__role">
+                                Accusamus
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <h2 class="subtitle reviews__title" data-aos="fade-up" data-aos-duration="950">
+                Eaque ipsa
+            </h2>
+            <div class="reviews__descr" data-aos="fade-in" data-aos-duration="950">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.
+            </div>
+            <div class="reviews-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="reviews-slide swiper-slide">
+                        <div class="reviews-slide__img">
+                            <img src="img/reviews_img-2.png" alt="photo">
+                        </div>
+                        <div class="reviews-slide__text">
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident."
+                        </div>
+                        <div class="reviews-slide__name">
+                            Vikentiy Chaykovsky
+                        </div>
+                    </div>
+                    <div class="reviews-slide swiper-slide">
+                        <div class="reviews-slide__img">
+                            <img src="img/reviews_img.png" alt="photo">
+                        </div>
+                        <div class="reviews-slide__text">
+                            "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum
+                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non
+                            provident."
+                        </div>
+                        <div class="reviews-slide__name">
+                            Richardo Kann
+                        </div>
+                    </div>
+                    <div class="reviews-slide swiper-slide">
+                        <div class="reviews-slide__img">
+                            <img src="img/reviews_img-2.png" alt="photo">
+                        </div>
+                        <div class="reviews-slide__text">
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident."
+                        </div>
+                        <div class="reviews-slide__name">
+                            Vikentiy Chaykovsky
+                        </div>
+                    </div>
+                    <div class="reviews-slide swiper-slide">
+                        <div class="reviews-slide__img">
+                            <img src="img/reviews_img.png" alt="photo">
+                        </div>
+                        <div class="reviews-slide__text">
+                            "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum
+                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non
+                            provident."
+                        </div>
+                        <div class="reviews-slide__name">
+                            Richardo Kann
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="reviews-slider__btn-prev slider-btn btn">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.11333 0L10 1.886L3.774 8.00267L10 14.114L8.11333 16L0 8.00267L8.11333 0Z" />
+                </svg>
+            </button>
+            <button class="reviews-slider__btn-next slider-btn btn">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.11333 0L10 1.886L3.774 8.00267L10 14.114L8.11333 16L0 8.00267L8.11333 0Z" />
+                </svg>
+            </button>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__info">
+                        <h2 class="contacts__title subtitle" data-aos="fade-right" data-aos-duration="950">Repudiandae
+                        </h2>
+                        <div class="contacts__text" data-aos="fade-in" data-aos-duration="950">
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et
+                            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias.
+                        </div>
+                        <div class="contacts__img-wrapper">
+                            <img class="contacts__img" src="img/contacts_img.webp" data-theme-img alt="photo">
+                        </div>
+                        <address class="contacts__address">
+                            <div class="contacts__address-title">
+                                Aspernatur
+                            </div>
+                            <div class="contacts__address-info">
+                                123 earum rerum hic tenetur a sapiente delectus, 42
+                            </div>
+                        </address>
+                        <address class="contacts__address">
+                            <div class="contacts__address-title">
+                                Reiciendis
+                            </div>
+                            <div class="contacts__address-info">
+                                <a class="contacts__phone" href="tel:+1(234)5678901"> +1 (234) 567 89 01</a>
+                                <a class="contacts__email" href="mailto:">example@email.com</a>
+                            </div>
+                        </address>
+                        <ul class="contacts-social social">
+                            <li class="social__item" data-aos="fade-up" data-aos-duration="950">
+                                <a class="social__link" href="#">
+                                    <img src="img/icons/facebook_contacts.svg" data-theme-icon alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social__item" data-aos="fade-up" data-aos-duration="950" data-aos-delay="100">
+                                <a class="social__link" href="#">
+                                    <img src="img/icons/twitter_contacts.svg" data-theme-icon alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social__item" data-aos="fade-up" data-aos-duration="950" data-aos-delay="200">
+                                <a class="social__link" href="#">
+                                    <img src="img/icons/instagram_contacts.svg" data-theme-icon alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contacts-form">
+                        <h2 class="contacts-form__title ">
+                            Alias consequatur
+                        </h2>
+                        <div class="contacts-form__control">
+                            <input id="formName" class="contacts-form__input contacts-form__element" name="name"
+                                type="text" required>
+                            <label class="contacts-form__label" for="formName">Your Name</label>
+                        </div>
+                        <div class="contacts-form__control">
+                            <input id="formEmail" class="contacts-form__input contacts-form__element" name="email"
+                                type="email" required>
+                            <label class="contacts-form__label" for="formEmail">Your Email</label>
+                        </div>
+                        <div class="contacts-form__control">
+                            <textarea id="formMessage" class="contacts-form__textarea contacts-form__element"
+                                name="message" required></textarea>
+                            <label class="contacts-form__label" for="formMessage">Your Message</label>
+                        </div>
+                        <button class="contacts-form__btn btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container">
+            <div class="theme-menu">
+                <button class="theme-menu__btn btn">O</button>
+                <div class="theme-menu__buttons">
+                    <button class="theme-btn theme-btn--pink btn" data-theme="">
+                        <img src="img/icons/flower-icon.svg" alt="flower">
+                    </button>
+                    <button class="theme-btn theme-btn--blue btn" data-theme="blue-theme">
+                        <img src="img/icons/sun-icon.svg" alt="sun">
+                    </button>
+                    <button class="theme-btn theme-btn--dark btn" data-theme="dark-theme">
+                        <img src="img/icons/moon-icon.svg" alt="moon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">
+                May the Force be with you.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+.home {
+    height: 100%;
+    position: relative;
+    background: var(--main-gradient);
+    overflow: hidden;
+    color: #fff;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease-out;
+    .swiper-button-disabled {
+        opacity: 0.3;
+        cursor: default;
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+}
+
+.home-slider {
+    overflow: visible;
+    padding: 0 50px;
+    .swiper-slide-active {
+        opacity: 1;
+    }
+
+    &__btn-next,
+    &__btn-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.8;
+        z-index: 4;
+        transition: opacity 0.2s ease-out;
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            filter: brightness(2);
+        }
+    }
+
+    &__btn-next {
+        right: 5px;
+        transform: rotate(180deg) translateY(50%);
+    }
+
+    &__btn-prev {
+        left: 5px;
+    }
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bubble-small,
+.bubble-mid,
+.bubble-big {
+    position: absolute;
+    background: var(--main-gradient);
+    border-radius: 50%;
+}
+
+.bubble-small {
+    width: 155px;
+    height: 155px;
+    top: 40px;
+    right: 0;
+}
+
+.bubble-mid {
+    width: 200px;
+    height: 200px;
+}
+
+.bubble-big {
+    width: 400px;
+    height: 400px;
+    bottom: -100px;
+    right: -230px;
+}
+
+.home-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+    overflow: visible;
+    &__info {
+        margin-top: 150px;
+        max-width: 490px;
+        margin-right: 30px;
+    }
+
+    &__img {
+        max-width: 700px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 34px;
+    }
+
+    &__title-2 {
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        max-width: 480px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 600;
+        margin-bottom: 34px;
+        max-width: 370px;
+    }
+
+    &__btn {
+        background-image: var(--btn-gradient);
+    }
+}
+
+.home-slide--2 {
+    .home-slide__btn {
+        background: var(--color-yellow);
+    }
+
+    .bubble-mid {
+        left: 10%;
+        top: -40%;
+    }
+}
+
+.home-slide--3 {
+    .bubble-small {
+        left: -5%;
+        top: -5%;
+    }
+
+    .bubble-mid {
+        left: 40%;
+        top: -35%;
+    }
+}
+
+.home-social {
+    position: absolute;
+    bottom: 48px;
+    right: 50px;
+    z-index: 3;
+    .social__item {
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
