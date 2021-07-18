@@ -74,9 +74,9 @@
 }
 
 .menu-btn__line {
+    display: block;
     height: 2px;
     width: 30px;
-    display: block;
     background-color: var(--main-color);
     margin-bottom: 7px;
     cursor: pointer;

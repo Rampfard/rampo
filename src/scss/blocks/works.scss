@@ -54,6 +54,7 @@
         grid-auto-rows: 272px;
         gap: 30px;
         margin-bottom: 48px;
+        overflow: hidden;
     }
 
     &__content {
@@ -131,7 +132,7 @@
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-40%);
+        transform: translateY(-20%);
     }
   
     to {
